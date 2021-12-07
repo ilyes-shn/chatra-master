@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import { NavLink, useHistory } from "react-router-dom";
+import { NavLink, useHistory, Link } from "react-router-dom";
 import { FaBars, FaTimes, FaApple, FaAndroid, FaGlobe, FaClone, FaLayerGroup } from "react-icons/fa";
 import { RiFlutterFill, RiSettings3Fill, RiComputerFill } from "react-icons/ri";
 import { AiOutlineFileSearch } from "react-icons/ai";
@@ -142,6 +142,7 @@ function Navbar() {
             {/* Single content */}
             <div>
               <h1 className="text-left text-xl mb-5 font-bold">Mobile development</h1>
+              <Link to='/mobile-development'>
               <div className="flex items-center text-sm text-left mb-5">
                 <FaApple fontSize={25} color="blue"/>
                 <div className="ml-2">
@@ -149,6 +150,8 @@ function Navbar() {
                   <h5 className="text-gray-400">Native Swift apps for all Apple devices</h5>
                 </div>
               </div>
+              </Link>
+              <Link to='/mobile-development'>
               <div className="flex items-center text-sm text-left mb-5">
                 <FaAndroid fontSize={25} color="blue"/>
                 <div className="ml-2">
@@ -156,6 +159,8 @@ function Navbar() {
                   <h5 className="text-gray-400">Build native apps for Android with Kotlin</h5>
                 </div>
               </div>
+              </Link>
+              <Link to='/mobile-development'>
               <div className="flex items-center text-sm text-left mb-5">
                 <RiFlutterFill fontSize={25} color="blue"/>
                 <div className="ml-2">
@@ -163,10 +168,12 @@ function Navbar() {
                   <h5 className="text-gray-400">Dart-based cross-platform development</h5>
                 </div>
               </div>
+              </Link>
             </div>
                
             <div>
               <h1 className="text-left text-xl mb-5 font-bold">Web development</h1>
+              <Link to='/web-development'>
               <div className="flex items-center text-sm text-left mb-5">
                 <FaGlobe fontSize={25} color="orange"/>
                 <div className="ml-2">
@@ -174,6 +181,8 @@ function Navbar() {
                   <h5 className="text-gray-400">Secure and performant web apps PWAs</h5>
                 </div>
               </div>
+              </Link>
+              <Link to='/web-development'>
               <div className="flex items-center text-sm text-left mb-5">
                 <RiSettings3Fill fontSize={25} color="orange"/>
                 <div className="ml-2">
@@ -181,6 +190,8 @@ function Navbar() {
                   <h5 className="text-gray-400">Solution architecture & cloud dev services</h5>
                 </div>
               </div>
+              </Link>
+              <Link to='/web-development'>
               <div className="flex items-center text-sm text-left mb-5">
                 <RiComputerFill fontSize={25} color="orange"/>
                 <div className="ml-2">
@@ -188,10 +199,12 @@ function Navbar() {
                   <h5 className="text-gray-400">Reengineering, redesign, and migration</h5>
                 </div>
               </div>
+              </Link>
             </div>
 
             <div>
               <h1 className="text-left text-xl mb-5 font-bold">For Startups</h1>
+             <Link to='/digital-transformation'>
               <div className="flex items-center text-sm text-left mb-5">
                 <AiOutlineFileSearch fontSize={25} color="#21e6c1"/>
                 <div className="ml-2">
@@ -199,6 +212,8 @@ function Navbar() {
                   <h5 className="text-gray-400">SRS, UX prototype, SWOT analysis</h5>
                 </div>
               </div>
+              </Link>
+              <Link to='/digital-transformation'>
               <div className="flex items-center text-sm text-left mb-5">
                 <FaLayerGroup fontSize={25} color="#21e6c1"/>
                 <div className="ml-2">
@@ -206,6 +221,8 @@ function Navbar() {
                   <h5 className="text-gray-400">Reducing time-to-market with MVP</h5>
                 </div>
               </div>
+              </Link>
+              <Link to='/digital-transformation'>
               <div className="flex items-center text-sm text-left mb-5">
                 <FaClone fontSize={25} color="#21e6c1"/>
                 <div className="ml-2">
@@ -213,20 +230,26 @@ function Navbar() {
                   <h5 className="text-gray-400">CaaS consulting services for startups</h5>
                 </div>
               </div>
+              </Link>
             </div>
-
+<Link to='/QA-testing'>
 <div className="text-left">
   <h2 className="text-xl font-bold">Software testing</h2>
   <h3 className="text-gray-400">Manual testing & Automation testing</h3>
 </div>
+</Link>
+<Link to='/project-development'>
 <div className="text-left">
   <h2 className="text-xl font-bold">Dedicated team</h2>
   <h3 className="text-gray-400">Experienced tech staff to extend a team</h3>
 </div>
+</Link>
+<Link to='/ui-development'>
 <div className="text-left">
   <h2 className="text-xl font-bold">UI-UX design</h2>
   <h3 className="text-gray-400">Material and HIG design for all platforms</h3>
 </div>
+</Link>
           </div>
         </li>
         <li className="nav-item">
