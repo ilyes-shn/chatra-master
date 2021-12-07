@@ -246,7 +246,7 @@ const [data, setData] = useState({one: 'Mobile app development', two: 'Web devel
       <MainSection bg="#F7F8F9">
         <div className="py-10">
         <h1 className="text-5xl font-bold">Technology stack</h1>
-        <h4 className="my-5 text-xl">Our development teams only use modern and scalable technologies to deliver a mobile or web application the way you mean it.</h4>
+        <h4 className="my-5 text-xl">Our development teams only use modern and scalable technologies to deliver a mobile or web application the way you want it.</h4>
        
        <Stack />
        

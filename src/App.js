@@ -21,6 +21,8 @@ import CareersPage from "./pages/CareersPage/CareersPage";
 import BlogPage from "./pages/BlogPage/BlogPage";
 import Contact from "./pages/Contact/Contact"
 import Portfolio from "./pages/Portfolio";
+import Terms from "./pages/Terms";
+import Privacy from "./pages/Privacy";
 
 function App() {
   AOS.init({
@@ -43,6 +45,8 @@ function App() {
           <Route path="/ui-development" component={UIDevelopment} />
           <Route path="/QA-testing" component={QAPage} />
           <Route path="/portfolio" component={Portfolio} />
+          <Route path="/terms" component={Terms} />
+          <Route path="/privacy" component={Privacy} />
           <Route
             path="/digital-transformation"
             component={DigitalTransformation}

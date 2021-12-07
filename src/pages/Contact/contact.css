@@ -19,9 +19,7 @@ textarea {
     margin-top: 30px;
 }
 
-.contactPage {
-    display: flex;
-}
+
 
 @media only screen and (max-width: 600px) {
 .contactPage {

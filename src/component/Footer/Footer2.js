@@ -152,9 +152,9 @@ const Footer2 = () => {
       >
         <div className="myContainer flex flex-col lg:flex-row justify-between">
           <div className="flex mb-3 lg:mb-0">
-            <span className="text-xs sm:text-sm">Terms of Services</span>
+            <Link to='/terms'><span className="text-xs sm:text-sm">Terms of Services</span></Link>
             <div className="border-r-2 border-white mx-4" />
-            <span className="text-xs sm:text-sm">Privacy Policy</span>
+            <Link to='/privacy'><span className="text-xs sm:text-sm">Privacy Policy</span></Link>
           </div>
           <div>
             <p className="text-xs sm:text-sm mt-2">

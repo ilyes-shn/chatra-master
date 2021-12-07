@@ -19,7 +19,7 @@ const Contact = () => {
           <h1 className="text-6xl font-extrabold">
             Tell us about your Project
           </h1>
-          <h4 className="text-xl md:visible invisible mt-5 lg:pr-6">
+          <h4 className="text-xl md:h-auto h-0 md:visible invisible mt-5 lg:pr-6">
             We’ll contact you within a couple of hours to schedule a meeting to
             discuss your goals.
           </h4>
@@ -43,15 +43,12 @@ const Contact = () => {
             label="Your phone number"
             variant="standard"
           />
-          <label
-            htmlFor="upload"
-            name="upload"
-            className="col-span-2 flex justify-between items-center pb-2 opacity-75 mt-5"
-            style={{ borderBottom: "1px solid gray" }}
-          >
-            <p>About a project</p>
-            <GrAttachment />
-          </label>
+          <TextField
+            id="standard-basic"
+            label="Message"
+            variant="standard"
+            className="col-span-2"
+          />
           <h4 className="opacity-50 my-3">
             By sending this form I confirm that I have read and accept the
             Privacy Policy
@@ -62,13 +59,47 @@ const Contact = () => {
           >
             Send message
           </button>
-          <input
-            type="file"
-            className="invisible"
-            id="upload"
-            placeholder="Your full name"
-            name="file"
-          />
+        </div>
+      </div>
+
+      <div>
+        <div className="lg:flex md:mt-20 mt-10 items-center">
+          <h1 className="md:w-2/3 justify-between md:text-7xl text-5xl font-bold">
+            Connect with our Team
+          </h1>
+          <h4 className="text-xl lg:p-5 py-3">
+            Let's communicate! Don't hesitate to contact us with your projects,
+            ideas, and questions.
+          </h4>
+        </div>
+        <div className="my-20 lg:grid grid-cols-3 gap-5">
+          <div className="lg:mb-0 mb-3">
+            <h2 className="md:text-3xl text-xl font-bold">Have a great idea?</h2>
+            <h2 className="md:text-2xl font-bold my-2 text-blue-600">
+            BusinessDev@24group.com.ng
+            </h2>
+            <h4 className="md:text-xl">
+              Tell us more about your business idea to get consulted
+            </h4>
+          </div>
+          <div className="lg:mb-0 mb-3">
+            <h2 className="md:text-3xl text-xl font-bold">Got questions to ask?</h2>
+            <h2 className="md:text-2xl font-bold my-2 text-blue-600">
+            Info@24group.com.ng
+            </h2>
+            <h4 className="md:text-xl">
+            Discuss your project with us. We’re open to questions
+            </h4>
+          </div>
+          <div className="lg:mb-0 mb-3">
+            <h2 className="md:text-3xl text-xl font-bold">We are hiring!</h2>
+            <h2 className="md:text-2xl font-bold my-2 text-blue-600">
+            Hr@24group.com.ng
+            </h2>
+            <h4 className="md:text-xl">
+            We do more for your career. Come and join us.
+            </h4>
+          </div>
         </div>
       </div>
     </motion.div>
