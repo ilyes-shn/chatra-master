@@ -121,7 +121,7 @@ function Navbar() {
               navColor === true ? "nav-links nav-links-change" : "nav-links"
             }
             // className="nav-links"
-            to="/portfolio"
+            to="/"
             onClick={closeMobileMenu}
           >
             Portfolio
